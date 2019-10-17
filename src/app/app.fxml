@@ -1,8 +1,30 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="app.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="background" onMouseClicked="#handleBackgroundMouseClick" onMouseDragged="#onMouseDragged"
+            onMouseMoved="#onMouseMoved" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased"
+            prefHeight="555.0" prefWidth="467.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="app.Controller">
+    <AnchorPane fx:id="box" layoutX="91.0" layoutY="86.0" onMouseClicked="#handleBoxClick" prefHeight="200.0"
+                prefWidth="200.0" style="-fx-background-color: #3D4956"/>
+    <Polygon fx:id="icon" fill="#214283" layoutX="213.0" layoutY="390.0" stroke="#3d4956" strokeType="INSIDE"
+             strokeWidth="4.0" style="&#10;">
+        <points>
+            <Double fx:value="25.0"/>
+            <Double fx:value="-43.0"/>
+            <Double fx:value="-25.0"/>
+            <Double fx:value="-43.0"/>
+            <Double fx:value="-50.0"/>
+            <Double fx:value="0.0"/>
+            <Double fx:value="-25.0"/>
+            <Double fx:value="43.0"/>
+            <Double fx:value="25.0"/>
+            <Double fx:value="43.0"/>
+            <Double fx:value="50.0"/>
+            <Double fx:value="0.0"/>
+        </points>
+    </Polygon>
+</AnchorPane>
